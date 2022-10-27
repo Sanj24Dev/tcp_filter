@@ -5,16 +5,17 @@ from scapy.all import *
 def search_tcp(filename):
 
     """
-    Function to search for TCP packets based on HTTP and HTTPS protocols and extract relevant meta-data from the packets
-    ...
-    Parameters
-    ----------
-    filename : str
-        Name of the traffic file to parse and extract data from
+    Function to search for TCP packets based on HTTP and HTTPS protocols 
+    and extract relevant meta-data from the packets
+    
+    Arguments
+        - filename : str
+          Name of the traffic file to parse and extract data from
+    
     Returns
-    -------
-    packet_list : list
-        A list containing TCP packets
+        - packet_list : list
+          A list containing TCP packets
+          
     """
 
     packet_list = []
@@ -85,7 +86,7 @@ def is_file_pcap(filename):
     """
     Function to determine if the given file is a pcap file or not
     ...
-    Parameters
+    Arguments
     ----------
     filename : str
         Name of the file to check
@@ -147,7 +148,7 @@ def search_tcp_flag(flag, packet_list):
     Function to search for the TCP packet containing the required filter flag. The meta-data of packets containing the filter flag are then written 
     and stored into a file named 'flag_data.txt'
     ...
-    Parameters
+    Arguments
     ----------
     flag : str
         Flag to filter the packet list by
