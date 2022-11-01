@@ -1,0 +1,12 @@
+++++++++++++++++++++++++++++++++++++++
+Source IP Address: 176.126.243.198
+Destination IP Address: 185.47.63.113
+Source port: 34515
+Destination port: 19
+Flags present: SYN
+++++++++++++++++++++++++++++++++++++++
+Source IP Address: 185.47.63.113
+Destination IP Address: 176.126.243.198
+Source port: 19
+Destination port: 34515
+Flags present: SYN ACK
